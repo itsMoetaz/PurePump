@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choix du Mode de Paiement</title>
+</head>
+
+<body>
+
+    <h2>Choisissez votre mode de paiement</h2>
+
+    <form action="paiement.html" method="POST">
+        <label>
+            <input type="radio" name="paiement" value="carte" required>
+            Carte Bancaire (Visa, MasterCard)
+        </label><br>
+
+
+
+        <label>
+            <input type="radio" name="paiement" value="espece">
+            Paiement à la livraison (Espèces)
+        </label><br>
+
+        <button type="submit">Continuer</button>
+    </form>
+
+</body>
+
+</html>
