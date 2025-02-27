@@ -4,21 +4,64 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>A Propos | Pure Pump</title>
+    <link rel="stylesheet" href="./public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
 <body>
 
-    <!-- Navbar -->
-    <nav>
-        <div>
-            <a href="#"><img src="assets/logo.png" alt="Pure Pump"></a>
-            <ul>
-                <li><a href="#">ACCUEIL</a></li>
-                <li><a href="#">BOUTIQUE</a></li>
-                <li><a href="#">À PROPOS</a></li>
-                <li><a href="#">CONTACTEZ-NOUS</a></li>
-            </ul>
+<!-- Navbar -->
+<nav class="bg-primaryWhite p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#">
+            <img src="assets/logo.png" alt="Pure Pump" class="h-14 px-4 md:px-32">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="flex-1 flex justify-center">
+            <div class="hidden md:flex space-x-12 text-primaryBlack">
+                <a href="#" class="hover:text-gray-400">ACCUEIL</a>
+                <a href="#" class="hover:text-gray-400">BOUTIQUE</a>
+                <a href="#" class="hover:text-gray-400">À PROPOS</a>
+                <a href="#" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
+            </div>
         </div>
-    </nav>
+
+        <!-- Icons and Mobile Menu Toggle -->
+        <div class="flex space-x-4 px-4 md:px-32">
+            <!-- Cart Icon -->
+            <a id="cart" href="#" class="text-primaryBlack hover:text-gray-400">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+            </a>
+
+            <!-- User Icon -->
+            <a id="user" href="#" class="text-primaryBlack hover:text-gray-400">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-toggle" class="md:hidden text-primaryBlack focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primaryWhite">
+        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
+        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
+        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
+        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">CONTACTEZ-NOUS</a>
+    </div>
+</nav>
+
 
     <!-- A propos -->
     <section>
@@ -69,6 +112,13 @@
             <p>Suivez-nous : </p>
         </div>
     </footer>
+    <script>
 
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
 </body>
 </html>
