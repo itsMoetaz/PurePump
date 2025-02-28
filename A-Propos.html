@@ -20,11 +20,11 @@
 
         <!-- Desktop Menu -->
         <div class="flex-1 flex justify-center">
-            <div class="hidden md:flex space-x-12 text-primaryBlack">
-                <a href="#" class="hover:text-gray-400">ACCUEIL</a>
-                <a href="#" class="hover:text-gray-400">BOUTIQUE</a>
-                <a href="#" class="hover:text-gray-400">À PROPOS</a>
-                <a href="#" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
+            <div class="hidden md:flex space-x-12 text-primaryBlack font-medium primaryfont">
+            <a href="./Acceuil.html" class=" hover:text-gray-400">ACCUEIL</a>
+            <a href="./Boutique.html" class="hover:text-gray-400">BOUTIQUE</a>
+            <a href="./A-Propos.html" class="text-primaryBlue hover:text-gray-400">À PROPOS</a>
+            <a href="#" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
             </div>
         </div>
 
@@ -54,62 +54,109 @@
     </div>
 
     <!-- Mobile Menu -->
-    <div id="mobile-menu" class="hidden md:hidden bg-primaryWhite">
-        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
-        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
-        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
+    <div id="mobile-menu" class="hidden md:hidden bg-primaryWhite font-medium primaryfont">
+        <a href="./Acceuil.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
+        <a href="./Boutique.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
+        <a href="./A-Propos.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
         <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">CONTACTEZ-NOUS</a>
     </div>
 </nav>
 
 
-    <!-- A propos -->
-    <section>
-        <h2>A PROPOS DE NOUS</h2>
-        <div>
-            <p>Pure Pump est une boutique en ligne spécialisée dans la vente de
-                 compléments alimentaires pour les sportifs. Nous proposons une 
-                 large gamme de produits de qualité à des prix compétitifs. Notre
-                  mission est de vous aider à atteindre vos objectifs sportifs en
-                   vous offrant des produits de qualité supérieure.</p>
+    <!-- Section À Propos de Nous -->
+    <section class="py-12 px-4">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold font-primaryFont text-center text-primaryBlue mb-8">A PROPOS DE NOUS</h2>
+            <div class="max-w-2xl mx-auto text-center">
+                <p class="text-primaryBlack">
+                    Pure Pump est une boutique en ligne spécialisée dans la vente de compléments alimentaires pour les sportifs. Nous proposons une large gamme de produits de qualité à des prix compétitifs. Notre
+                    mission est de vous aider à atteindre vos objectifs sportifs en vous offrant des produits de qualité supérieure.
+                </p>
+            </div>
         </div>
     </section>
 
-    <!-- certifs -->
-    <section>
-        <h2>NOS CERTIFICATIONS</h2>
-        <div>
-            <img src="assets/certif1.png" alt="Certification 1">
-            <img src="assets/certif2.png" alt="Certification 2">
-            <img src="assets/certif3.png" alt="Certification 3">
+    <!-- Section Certifications -->
+    <section class="py-12 px-4 bg-white">
+        <div class="container mx-auto">
+            <h2 class="text-3xl font-bold font-primaryFont text-primaryBlue text-center mb-8">NOS CERTIFICATIONS</h2>
+            <div class="flex flex-wrap justify-center gap-8 ">
+                <div class=" duration-300 transform hover:scale-105"><img src="assets/certif1.png" alt="Certification 1" class="w-48 h-auto"></div>
+                <div class=" duration-300 transform hover:scale-105"><img src="assets/certif2.png" alt="Certification 2" class="w-48 h-auto"></div>
+                <div class=" duration-300 transform hover:scale-105"><img src="assets/certif3.png" alt="Certification 3" class="w-48 h-auto"></div>
+            </div>
         </div>
     </section>
 
-    <!-- valeurs -->
-    <section>
-        <h2>NOS VALEURS</h2>
-        <div>
-            <img src="assets/pngegg.png" alt="athlete">
-            <p>
-                Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
-                Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
-                 when an unknown printer took a galley of type and 
-                àscrambled it to make a type specimen book. It has survived not only five centuries.
-            </p>
+<!-- Section Nos Valeurs -->
+<section class="py-12 px-4">
+    <div class="container mx-auto">
+        <h2 class="text-3xl font-bold font-primaryFont text-center text-primaryBlue mb-8">NOS VALEURS</h2>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-1 items-center">
+            <!-- Image Column -->
+            <div class="flex justify-center">
+                <img src="assets/pngegg.png" alt="athlete" class="w-full max-w-md h-auto">
+            </div>
+            
+            <!-- Text Column -->
+            <div class="prose max-w-xl">
+                <p class="text-primaryBlack text-justify leading-relaxed">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+                    Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,
+                    when an unknown printer took a galley of type and scrambled it to make a type
+                    specimen book. It has survived not only five centuries.
+                </p>
+            </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- Footer -->
-    <footer>
-        <div>
-            <div>
-                <a href="#">ACCUEIL</a>
-                <a href="#">BOUTIQUE</a>
-                <a href="#">À PROPOS</a>
-                <a href="#">CONTACTEZ-NOUS</a>
+    <footer class="bg-primaryBlue text-primaryWhite font-medium primaryfont py-8">
+        <div class="container mx-auto px-32">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <!-- Partie gauche : Liste de liens -->
+                <div class="mb-6 md:mb-0">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">ACCUEIL</a></li>
+                        <li><a href="#" class="hover:text-gray-400">BOUTIQUE</a></li>
+                        <li><a href="#" class="hover:text-gray-400">À PROPOS</a></li>
+                        <li><a href="#" class="hover:text-gray-400">CONTACTEZ-NOUS</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Partie droite : Informations de contact et réseaux sociaux -->
+                <div class="mb-6 md:mb-0">
+                    <ul class="space-y-2">
+                        <li class="text-primaryWhite font-medium primaryfont">📧 contact@purepum.tn</li>
+                        <li class="text-primaryWhite font-medium primaryfont">📞 +216 23 910 690</li>
+                        <li class="text-primaryWhite font-medium primaryfont">Suivez-nous :</li>
+                        <li>
+                            <div class="flex space-x-4">
+                                <!-- Icône Facebook -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+                                </svg>
+                            </a>
+                            <!-- Icône X (anciennement Twitter) -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.93 6.817H2.667l7.73-8.835L2.25 2.25h7.604l4.713 6.231 5.677-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"></path>
+                                </svg>
+                            </a>
+                                <!-- Nouvelle Icône Instagram -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                </svg>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
             </div>
-            <p>📧 contact@purepump.tn | 📞 +216 23 910 690</p>
-            <p>Suivez-nous : </p>
         </div>
     </footer>
     <script>
