@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Acceuil | Pure Pump</title>
+    <title>Boutique | Pure Pump</title>
     <link rel="stylesheet" href="./public/style.css">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
@@ -23,7 +23,6 @@
     </script>
 </head>
 <body>
-
 <!-- Navbar -->
 <nav class="bg-primaryWhite p-4">
     <div class="container mx-auto flex justify-between items-center">
@@ -35,9 +34,9 @@
         <!-- Desktop Menu -->
         <div class="flex-1 flex justify-center">
             <div class="hidden md:flex space-x-12 text-primaryBlack font-medium primaryfont">
-                <a href="./Acceuil.html" class="text-primaryBlue hover:text-gray-400">ACCUEIL</a>
-                <a href="./Boutique.html" class="hover:text-gray-400">BOUTIQUE</a>
-                <a href="./A-Propos.html" class="hover:text-gray-400">À PROPOS</a>
+            <a href="./Acceuil.html" class="hover:text-gray-400">ACCUEIL</a>
+            <a href="./Boutique.html" class="text-primaryBlue hover:text-gray-400">BOUTIQUE</a>
+            <a href="./A-Propos.html" class="hover:text-gray-400">À PROPOS</a>
             <a href="./Contactez-Nous.html" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
             </div>
         </div>
@@ -76,9 +75,173 @@
     </div>
 </nav>
 
+<!-- Header -->
+<header class="flex flex-col md:flex-row justify-between items-center p-4">
+    <h1 class="text-2xl md:text-3xl font-bold text-center text-primaryBlue my-4 md:m-8 md:ml-4 lg:ml-14">COMPARER</h1>
+    <div class="flex items-center gap-2 w-full md:w-auto mx-4 md:mr-4 lg:mr-14 mb-4 md:mb-0">
+        <div class="relative w-full md:w-auto">
+            <input type="text" placeholder="Recherche" class="border p-2 pl-10 w-full md:w-64 hover:border-primaryBlue focus:border-primaryBlue transition duration-300">
+            <svg class="w-5 h-5 text-gray-500 absolute left-3 top-1/2 transform -translate-y-1/2" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+        </div>
+    </div>
+</header>
  
-  
+<div class="bg-gray-100 p-10 rounded-lg shadow-md max-w-5xl mx-auto text-center">
+    <div class="grid grid-cols-3 gap-8">
+        <!-- Catégories -->
+        <div>
+            <h3 class="font-bold text-lg flex justify-center items-center">
+                Catégories 
+            </h3>
+            <div class="mt-3 space-y-3 text-left inline-block">
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2"> Whey
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2"> Mass
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2"> Creatine
+                </label>
+                <label class="flex items-center">
+                    <input type="checkbox" class="mr-2"> Carbs
+                </label>
+            </div>
+        </div>
 
+        <!-- Commander par -->
+        <div>
+            <h3 class="font-bold text-lg flex justify-center items-center">
+                Commander par 
+            </h3>
+            <div class="mt-3 space-y-3 text-left inline-block">
+                <label class="flex items-center">
+                    <input type="radio" name="order" class="mr-2"> Min - Max
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="order" class="mr-2"> Max - Min
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="order" class="mr-2"> A - Z ordre
+                </label>
+                <label class="flex items-center">
+                    <input type="radio" name="order" class="mr-2"> Z - A ordre
+                </label>
+            </div>
+        </div>
+
+        <!-- Filtrer par prix -->
+        <div>
+            <h3 class="text-lg font-semibold mt-6"">Filtrer par prix</h3>
+            <input type="range" min="0" max="500" class="w-full mt-2">
+            <p class="text-center mt-2">0DT - 500DT</p>
+        </div>
+    </div>
+
+    <!-- Bouton et nombre de produits -->
+    <div class="flex justify-center items-center mt-8 space-x-8">
+        <button class="flex items-center text-orange-500 font-semibold">
+            <span class="text-xl mr-2">➕</span> Afficher plus de critères
+        </button>
+        <button class="bg-primaryBlue text-white px-6 py-3 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">
+            Recherche
+        </button>
+        <span class="font-bold text-lg">1420</span> produits trouvés
+    </div>
+</div>
+<br>
+    <!-- Product Grid -->        
+        <section class="w-full md:w-3/4 grid grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6 mx-auto justify-center">
+            <!-- Product Card 1 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-full">
+                <img src="assets/whey.webp" alt="ISO GRO WHEY" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">ISO GRO WHEY</h5>
+                <p class="text-sm text-gray-600">2.2 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+                <button class="bg-primaryBlue text-white w-full py-2 mt-4 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">COMMANDER</button>
+            </div>
+    
+            <!-- Product Card 2 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-full">
+                <img src="assets/mass.webp" alt="Hyperbolic Mass" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">HYPERBOLIC MASS GH</h5>
+                <p class="text-sm text-gray-600">6 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+                <button class="bg-primaryBlue text-white w-full py-2 mt-4 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">COMMANDER</button>
+            </div>
+    
+            <!-- Product Card 3 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-full">
+                <img src="assets/mass.webp" alt="Hyperbolic Mass" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">HYPERBOLIC MASS GH</h5>
+                <p class="text-sm text-gray-600">6 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+                <button class="bg-primaryBlue text-white w-full py-2 mt-4 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">COMMANDER</button>
+            </div>
+    
+            <!-- Product Card 4 -->
+            <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-full">
+                <img src="assets/mass.webp" alt="Hyperbolic Mass" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">HYPERBOLIC MASS GH</h5>
+                <p class="text-sm text-gray-600">6 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+                <button class="bg-primaryBlue text-white w-full py-2 mt-4 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">COMMANDER</button>
+            </div>
+        </section>
+    
+        <!-- Bouton Comparer bien centré -->
+        <div class="flex justify-center mt-6">
+            <button class="bg-primaryBlue text-white px-6 py-3 rounded-md hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">
+                COMPARER
+            </button>
+        </div>
+
+    
+    
+    
+</main>
+<BR></BR>
+<!-- Pagination -->
+<div class="bg-gray-100 p-10 rounded-lg shadow-md max-w-5xl mx-auto text-center">
+    <h1 class="text-2xl font-bold text-gray-800 mb-6 uppercase">Comparatifs populaires</h1>    <section class="w-full md:w-3/4 grid grid-cols-3 gap-6 mx-auto justify-center items-center">
+        <!-- Product Card 1 -->
+        <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-[400px] flex flex-col justify-between">
+            <div class="text-center">
+                <img src="assets/whey.webp" alt="ISO GRO WHEY" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">ISO GRO WHEY</h5>
+                <p class="text-sm text-gray-600">2.2 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+            </div>
+            <button class="bg-primaryBlue text-white w-full py-2 mt-4 hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">
+                COMMANDER
+            </button>
+        </div>
+
+        <!-- VS -->
+        <div class="flex items-center justify-center h-full text-2xl font-bold text-gray-600">
+            VS
+        </div>
+
+        <!-- Product Card 2 -->
+        <div class="bg-white p-4 rounded-lg shadow-md text-left w-full transition duration-300 transform hover:scale-105 min-h-[400px] flex flex-col justify-between">
+            <div class="text-center">
+                <img src="assets/mass.webp" alt="Hyperbolic Mass" class="w-32 h-32 md:w-40 md:h-40 mx-auto mb-4">
+                <h5 class="text-lg font-bold">HYPERBOLIC MASS GH</h5>
+                <p class="text-sm text-gray-600">6 KG</p>
+                <p class="text-blue-400 font-bold pt-2">279 TND</p>
+            </div>
+            <button class="bg-primaryBlue text-white w-full py-2 mt-4 hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">
+                COMMANDER
+            </button>
+        </div>
+    </section>
+</div>
+
+
+
+<BR></BR>
 
     <!-- Footer -->
     <footer class="bg-primaryBlue text-primaryWhite font-medium primaryfont py-8">
@@ -135,7 +298,11 @@
             const mobileMenu = document.getElementById('mobile-menu');
             mobileMenu.classList.toggle('hidden');
         });
+            // Filter toggle for mobile
+    document.getElementById('filter-toggle').addEventListener('click', function() {
+        const filterMenu = document.getElementById('filter-menu');
+        filterMenu.classList.toggle('hidden');
+    });
     </script>
-
 </body>
 </html>
