@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Nos Avis Clients | Pure Pump</title>
-  <link rel="stylesheet" href="./public/style.css" />
+  <link rel="stylesheet" href="/public/style.css" />
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
     tailwind.config = {
@@ -29,18 +29,18 @@
   <nav class="bg-primaryWhite p-4">
     <div class="container mx-auto flex justify-between items-center">
       <a href="#">
-        <img src="assets/logo.png" alt="Pure Pump" class="h-14 px-4 md:px-32" />
+        <img src="/assets/logo.png" alt="Pure Pump" class="h-14 px-4 md:px-32" />
       </a>
       <div class="flex-1 flex justify-center">
         <div class="hidden md:flex space-x-12 text-primaryBlack font-medium">
-          <a href="./Acceuil.html" class="hover:text-gray-400">ACCUEIL</a>
-          <a href="./Boutique.html" class="hover:text-gray-400">BOUTIQUE</a>
-          <a href="./A-Propos.html" class="hover:text-gray-400">À PROPOS</a>
-          <a href="./Contactez-Nous.html" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
+          <a href="/Acceuil.html" class="hover:text-gray-400">ACCUEIL</a>
+          <a href="/Boutique.html" class="hover:text-gray-400">BOUTIQUE</a>
+          <a href="/A-Propos.html" class="hover:text-gray-400">À PROPOS</a>
+          <a href="/Contactez-Nous.html" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
         </div>
       </div>
       <div class="flex space-x-4 px-4 md:px-32">
-        <a id="cart" href="panier.html" class="text-primaryBlack hover:text-gray-400">
+        <a id="cart" href="/panier.html" class="text-primaryBlack hover:text-gray-400">
           <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
             <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
               d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z">
@@ -61,10 +61,10 @@
       </div>
     </div>
     <div id="mobile-menu" class="hidden md:hidden bg-primaryWhite font-medium">
-      <a href="./Acceuil.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
-      <a href="./Boutique.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
-      <a href="./A-Propos.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
-      <a href="./Contactez-Nous.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">CONTACTEZ-NOUS</a>
+      <a href="/Acceuil.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
+      <a href="/Boutique.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
+      <a href="/A-Propos.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
+      <a href="/Contactez-Nous.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">CONTACTEZ-NOUS</a>
     </div>
   </nav>
 
@@ -97,13 +97,13 @@
     </button>
   </div>
   <div>
-    <img src="assets/view grid.png" alt="filtre" class="w-18 h-auto ml-4" />
+    <img src="/assets/view grid.png" alt="filtre" class="w-18 h-auto ml-4" />
   </div>
 </div>
 
 <!-- Modal -->
 <div id="modal"
-  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50 hidden z-50">
+  class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50  z-50">
   <div class="bg-white p-6 rounded-lg shadow-lg w-96">
     <h2 class="text-lg font-bold mb-4">Ajouter un Avis</h2>
     <textarea class="w-full p-2 border rounded" rows="4" placeholder="Votre avis..."></textarea>
@@ -151,7 +151,7 @@
    <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
     <div class="text-center mb-4">
       <!-- Étoiles centrées -->
-      <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+      <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
       
       <!-- Avis centré et mieux espacé -->
       <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -163,11 +163,11 @@
       <h5 class="text-md font-bold">Garantie de Qualité</h5>
       <div class="flex space-x-3">
         <button class="text-gray-600 flex items-center">
-          <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+          <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
           <span class="text-sm">15</span>
         </button>
         <button class="text-gray-600 flex items-center">
-          <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+          <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
           <span class="text-sm">10</span>
         </button>
       </div>
@@ -180,7 +180,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -192,11 +192,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -207,7 +207,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -219,11 +219,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -235,7 +235,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -247,11 +247,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -263,7 +263,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -275,11 +275,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -291,7 +291,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -303,11 +303,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -318,7 +318,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -330,11 +330,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -346,7 +346,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -358,11 +358,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -374,7 +374,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -386,11 +386,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -402,7 +402,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -414,11 +414,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -430,7 +430,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -442,11 +442,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -458,7 +458,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -470,11 +470,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -485,7 +485,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -497,11 +497,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -513,7 +513,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -525,11 +525,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
@@ -541,7 +541,7 @@
     <div class="bg-white p-6 shadow-lg rounded-lg text-center max-w-sm mx-auto transition duration-300 transform hover:scale-105">
       <div class="text-center mb-4">
         <!-- Étoiles centrées -->
-        <img src="assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
+        <img src="/assets/3stars.png" alt="avis3" class="inline-block w-28 h-auto mx-auto mb-2" />
         
         <!-- Avis centré et mieux espacé -->
         <p class="text-gray-800 text-base font-medium leading-relaxed max-w-xs mx-auto px-4">
@@ -553,11 +553,11 @@
         <h5 class="text-md font-bold">Garantie de Qualité</h5>
         <div class="flex space-x-3">
           <button class="text-gray-600 flex items-center">
-            <img src="assets/like.png" alt="like" class="w-5 h-5 mr-1" />
+            <img src="/assets/like.png" alt="like" class="w-5 h-5 mr-1" />
             <span class="text-sm">15</span>
           </button>
           <button class="text-gray-600 flex items-center">
-            <img src="assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
+            <img src="/assets/dislike.png" alt="dislike" class="w-5 h-5 mr-1" />
             <span class="text-sm">10</span>
           </button>
         </div>
