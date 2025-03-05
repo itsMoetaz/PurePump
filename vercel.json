@@ -2,7 +2,7 @@
     "routes": [
       {
         "src": "/",
-        "dest": "/index.html"
+        "dest": "/"
       },
       {
         "src": "/public/(.*)",
@@ -14,7 +14,7 @@
       },
       {
         "src": "/(.*)",
-        "dest": "/index.html"
+        "dest": "/"
       }
     ]
   }
