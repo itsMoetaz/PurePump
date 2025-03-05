@@ -1,6 +1,16 @@
 {
-    "routes": [
-      { "handle": "filesystem" },
-      { "src": "/(.*)", "dest": "/Acceuil.html" }
-    ]
-  }
+  "routes": [
+    {
+      "src": "/",
+      "dest": "/Acceuil.html"
+    },
+    {
+      "src": "/public/(.*)",
+      "headers": { "Cache-Control": "public, max-age=31536000, immutable" }
+    },
+    {
+      "src": "/(.*)",
+      "dest": "/Acceuil.html"
+    }
+  ]
+}
