@@ -1,12 +1,232 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Acceuil | Pure Pump</title>
     <link rel="stylesheet" href="/public/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primaryBlue: '#105498',  // Remplacez par votre couleur bleue exacte
+                        primaryOrange: '#ff8811', // Remplacez par votre couleur orange exacte
+                        primaryBlack: '#333333',
+                        primaryWhite: '#ffffff',
+                        secondaryBlue: '#479aeb'
+                    }
+                }
+            }
+        }
+    </script>
 </head>
 <body>
-    <h1 class="text-center text-primaryBlue py-4 bg-slate-400">tailwind.css</h1>
+
+<!-- Navbar -->
+<nav class="bg-primaryWhite p-4">
+    <div class="container mx-auto flex justify-between items-center">
+        <!-- Logo -->
+        <a href="#">
+            <img src="assets/logo.png" alt="Pure Pump" class="h-14 px-4 md:px-32">
+        </a>
+
+        <!-- Desktop Menu -->
+        <div class="flex-1 flex justify-center">
+            <div class="hidden md:flex space-x-12 text-primaryBlack font-medium primaryfont">
+                <a href="/Acceuil.html" class="text-primaryBlue hover:text-gray-400">ACCUEIL</a>
+                <a href="/Boutique.html" class="hover:text-gray-400">BOUTIQUE</a>
+                <a href="/A-Propos.html" class="hover:text-gray-400">À PROPOS</a>
+            <a href="/Contactez-Nous.html" class="hover:text-gray-400">CONTACTEZ-NOUS</a>
+            </div>
+        </div>
+
+        <!-- Icons and Mobile Menu Toggle -->
+        <div class="flex space-x-4 px-4 md:px-32">
+            <!-- Cart Icon -->
+            <a id="cart" href="/panier.html" class="text-primaryBlack hover:text-gray-400">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"></path>
+                </svg>
+            </a>
+
+            <!-- User Icon -->
+            <a id="user" href="#" class="text-primaryBlack hover:text-gray-400">
+                <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"></path>
+                </svg>
+            </a>
+
+            <!-- Mobile Menu Toggle Button -->
+            <button id="menu-toggle" class="md:hidden text-primaryBlack focus:outline-none">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7"></path>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-primaryWhite font-medium primaryfont">
+        <a href="/Acceuil.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">ACCUEIL</a>
+        <a href="/Boutique.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">BOUTIQUE</a>
+        <a href="/A-Propos.html" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">À PROPOS</a>
+        <a href="#" class="block px-4 py-2 text-primaryBlack hover:bg-gray-200">CONTACTEZ-NOUS</a>
+    </div>
+</nav>
+
+ <!-- Bannière -->
+ <section class="relative">
+    <img src="/assets/banner.webp" alt="Offre spéciale" class="w-full h-auto">
+</section>
+
+<!-- Produits -->
+<section class="py-12 px-4">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-primaryBlue mb-8">NOS PRODUITS</h2>
+      <div class="flex justify-center items-center space-x-4">
+        <!-- Bouton gauche -->
+        <button class="text-primaryBlue text-2xl">&#10094;</button>
+        <!-- Produits -->
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <!-- Produit 1 -->
+          <div class="bg-white p-4 -lg shadow-md text-left w-full transition duration-300 transform hover:scale-105">
+            <img src="/assets/creatine.webp" alt="Créatine" class="w-40 h-40 mx-auto mb-4"> <!-- Taille augmentée -->
+            <h5 class="text-lg font-bold text-left">CREATINE</h5>
+            <p class="text-sm text-gray-600 text-left">500 G</p>
+            <p class="text-primaryBlue font-bold text-left pt-2">279 TND</p>
+            <button class="bg-primaryBlue text-white w-full py-2 mt-4 hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">ACHETER</button>
+          </div>
+          
+          <!-- Produit 2 -->
+          <div class="bg-white p-4 -lg shadow-md text-left w-full transition duration-300 transform hover:scale-105">
+            <img src="/assets/whey.webp" alt="ISO GRO WHEY" class="w-40 h-40 mx-auto mb-4"> <!-- Taille augmentée -->
+            <h5 class="text-lg font-bold text-left">ISO GRO WHEY</h5>
+            <p class="text-sm text-gray-600 text-left">2.2 KG</p>
+            <p class="text-primaryBlue font-bold text-leftt pt-2">279 TND</p>
+            <button class="bg-primaryBlue text-white w-full py-2 mt-4 hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">ACHETER</button>
+          </div>
+          
+          <!-- Produit 3 -->
+          <div class="bg-white p-4 -lg shadow-md text-left w-full transition duration-300 transform hover:scale-105">
+            <img src="/assets/mass.webp" alt="Hyperbolic Mass" class="w-40 h-40 mx-auto mb-4"> <!-- Taille augmentée -->
+            <h5 class="text-lg font-bold text-left">HYPERBOLIC MASS GH</h5>
+            <p class="text-sm text-gray-600 text-left">6 KG</p>
+            <p class="text-primaryBlue font-bold text-leftt pt-2">279 TND</p>
+            <button class="bg-primaryBlue text-white w-full py-2 mt-4 hover:bg-primaryOrange font-bold transition duration-300 transform hover:scale-105">ACHETER</button>
+          </div>
+        </div>
+        <!-- Bouton droit -->
+        <button class="text-primaryBlue text-2xl">&#10095;</button>
+      </div>
+    </div>
+</section>
+  
+<!-- Services -->
+<section class="py-12 px-4 bg-white">
+    <div class="container mx-auto">
+      <h2 class="text-3xl font-bold text-center text-primaryBlue mb-8">NOS SERVICES</h2>
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 p-10">
+        <!-- Garantie de Qualité (Icône de vérification) -->
+        <div class="bg-white p-6 drop-shadow-2xl flex items-center space-x-4 h-36 transition duration-300 transform hover:scale-105">
+          <span class="text-primaryBlue">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41L9 16.17z"></path>
+            </svg>
+          </span>
+          <p class="text-lg font-semibold">Garantie de Qualité</p> 
+        </div>
+        
+        <!-- Offres exclusives (Icône existante) -->
+        <div class="bg-white p-6 drop-shadow-2xl flex items-center space-x-4 h-36 transition duration-300 transform hover:scale-105">
+          <span class="text-primaryBlue">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M21.41 11.58l-9-9C12.05 2.22 11.55 2 11 2H4c-1.1 0-2 .9-2 2v7c0 .55.22 1.05.59 1.42l9 9c.36.36.86.58 1.41.58.55 0 1.05-.22 1.41-.59l7-7c.37-.36.59-.86.59-1.41 0-.55-.23-1.06-.59-1.42zM5.5 7C4.67 7 4 6.33 4 5.5S4.67 4 5.5 4 7 4.67 7 5.5 6.33 7 5.5 7z"></path>
+            </svg>
+          </span>
+          <p class="text-lg font-semibold">Des offres exclusives</p>
+        </div>
+        
+        <!-- Livraison rapide (Icône de vitesse) -->
+        <div class="bg-white p-6 drop-shadow-2xl flex items-center space-x-4 h-36 transition duration-300 transform hover:scale-105">
+          <span class="text-primaryBlue">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20.38 8.57l-1.23 1.85a8 8 0 0 1-.22 7.58H5.07A8 8 0 0 1 15.58 6.85l1.85-1.23A10 10 0 0 0 3.35 19a2 2 0 0 0 1.72 1h13.85a2 2 0 0 0 1.74-1 10 10 0 0 0-.27-10.44zm-9.79 6.84a2 2 0 0 0 2.83 0l5.66-8.49-8.49 5.66a2 2 0 0 0 0 2.83z"></path>
+            </svg>
+          </span>
+          <p class="text-lg font-semibold">Livraison rapide</p>
+        </div>
+        
+        <!-- Facilité de paiement (Icône existante) -->
+        <div class="bg-white p-6 drop-shadow-2xl flex items-center space-x-4 h-36 transition duration-300 transform hover:scale-105">
+          <span class="text-primaryBlue">
+            <svg class="w-10 h-10" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+              <path d="M20 4H4c-1.11 0-1.99.89-1.99 2L2 18c0 1.11.89 2 2 2h16c1.11 0 2-.89 2-2V6c0-1.11-.89-2-2-2zm0 14H4v-6h16v6zm0-10H4V6h16v2z"></path>
+            </svg>
+          </span>
+          <p class="text-lg font-semibold">Facilité de paiement</p>
+        </div>
+      </div>
+    </div>
+</section>>
+
+    <!-- Footer -->
+    <footer class="bg-primaryBlue text-primaryWhite font-medium primaryfont py-8">
+        <div class="container mx-auto px-32">
+            <div class="flex flex-col md:flex-row justify-between items-start">
+                <!-- Partie gauche : Liste de liens -->
+                <div class="mb-6 md:mb-0">
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-gray-400">ACCUEIL</a></li>
+                        <li><a href="#" class="hover:text-gray-400">BOUTIQUE</a></li>
+                        <li><a href="#" class="hover:text-gray-400">À PROPOS</a></li>
+                        <li><a href="#" class="hover:text-gray-400">CONTACTEZ-NOUS</a></li>
+                    </ul>
+                </div>
+    
+                <!-- Partie droite : Informations de contact et réseaux sociaux -->
+                <div class="mb-6 md:mb-0">
+                    <ul class="space-y-2">
+                        <li class="text-primaryWhite font-medium primaryfont">📧 contact@purepum.tn</li>
+                        <li class="text-primaryWhite font-medium primaryfont">📞 +216 23 910 690</li>
+                        <li class="text-primaryWhite font-medium primaryfont">Suivez-nous :</li>
+                        <li>
+                            <div class="flex space-x-4">
+                                <!-- Icône Facebook -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M22.675 0H1.325C.593 0 0 .593 0 1.325v21.351C0 23.407.593 24 1.325 24H12.82v-9.294H9.692v-3.622h3.128V8.413c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.795.143v3.24l-1.918.001c-1.504 0-1.795.715-1.795 1.763v2.313h3.587l-.467 3.622h-3.12V24h6.116c.733 0 1.325-.593 1.325-1.325V1.325C24 .593 23.407 0 22.675 0z"></path>
+                                </svg>
+                            </a>
+                            <!-- Icône X (anciennement Twitter) -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817-5.93 6.817H2.667l7.73-8.835L2.25 2.25h7.604l4.713 6.231 5.677-6.231zm-1.161 17.52h1.833L7.084 4.126H5.117l11.966 15.644z"></path>
+                                </svg>
+                            </a>
+                                <!-- Nouvelle Icône Instagram -->
+                            <a href="#" class="text-primaryWhite hover:text-gray-400">
+                                <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"></path>
+                                </svg>
+                            </a>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+
+        // Mobile menu toggle
+        document.getElementById('menu-toggle').addEventListener('click', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            mobileMenu.classList.toggle('hidden');
+        });
+    </script>
+
 </body>
 </html>
